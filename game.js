@@ -98,6 +98,18 @@ $(document).ready(function () {
         
 
     } 
+    
+    $('h1').click(function (e) { 
+
+        // alert("keydown");
+        // alert("playingGame = " + playingGame);
+        if (playingGame === false) {
+            playingGame = true;
+            // alert("calling nextSequence");
+            nextSequence();  
+        }
+    });
+    
 
     $('body').keydown(function (e) { 
 
